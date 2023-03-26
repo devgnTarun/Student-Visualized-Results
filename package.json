@@ -1,0 +1,23 @@
+{
+  "name": "school",
+  "version": "1.0.0",
+  "description": "This project is assignment object, in which we get student result and present it on chart",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Tarun",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.0.1",
+    "react-chartjs-2": "^5.2.0",
+    "validator": "^13.9.0"
+  }
+}
