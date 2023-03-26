@@ -14,12 +14,15 @@ app.use(cors())
 const student = require('./Routes/studentRoutes')
 const user = require('./Routes/userRoutes')
 
+
+
+app.use('/api/v2' , student)
+app.use('/api/v2' , user)
+
 app.use(express.static(path.join(__dirname , './frontend/build')))
 
 app.get("*" , (req , res ) => {
     res.sendFile(path.resolve(__dirname , './frontend/build/index.html'))
 })
 
-app.use('/api/v2' , student)
-app.use('/api/v2' , user)
 module.exports = app;
