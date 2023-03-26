@@ -9,10 +9,7 @@ require('dotenv').config({path : './backend/config/config.env'})
 
 app.use(express.json())
 app.use(cookieParser())
-app.use(cors({
-    credentials : true,
-    origin : 'http://localhost:5000',
-}))
+app.use(cors())
 
 const student = require('./Routes/studentRoutes')
 const user = require('./Routes/userRoutes')
